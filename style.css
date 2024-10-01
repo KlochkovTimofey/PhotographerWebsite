@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", system-ui;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+}
+
+h2 {
+    color: white;
+    font-size: 60px;
+}
+
+header {
+    position: relative;
+    background-image: url(img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+    z-index: 1;
+}
+
+p {
+    color: white;
+    display: inline-block;
+    width: 60%;
+    line-height: 25px;
+}
+
+hr {
+    
+    border: 3px solid white;
+    border-radius: 8px;
+    margin: 0 0 20px 0;
+}
+
+input,
+textarea {
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: #6666b4;
+}
+
+#name_l {
+    grid-area: name_l;
+}
+#name_i {
+    grid-area: name_i;
+}
+#email_l {
+    grid-area: email_l;
+}
+#email_i {
+    grid-area: email_i;
+}
+#message_l {
+    grid-area: message_l;
+}
+#message_i {
+    grid-area: message_i;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.connect-btn {
+    background-color: transparent;
+    width: 200px;
+    height: 70px;
+    color: white;
+    outline: none;
+    text-align: center;
+    vertical-align: top;
+    border: 3px solid white;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px;
+    transition: all 0.5s ease;
+    border-radius: 6px;
+}
+
+.connect-btn:hover {
+    background-color: #6666b453;
+}
+
+.send-btn {
+    background-color: transparent;
+    width: 360px;
+    height: 60px;
+    color: white;
+    outline: none;
+    text-align: center;
+    vertical-align: top;
+    border: 3px solid white;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px 0;
+    padding: 10px;
+    transition: all 0.5s ease;
+    border-radius: 6px;
+
+}
+
+.send-btn:hover {
+    background-color: #bbacff;
+}
+
+.cover {
+    position: absolute;
+    background-color: #160244b3;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 450px);
+}
+
+.item {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.item:nth-child(1) {
+    background-image: url(img/pic01.jpg);
+}
+
+.item:nth-child(2) {
+    background-image: url(img/pic02.jpg);
+  
+    grid-column: span 2;
+}
+.item:nth-child(3) {
+    background-image: url(img/pic03.jpg);
+    grid-column: span 2;
+}
+
+.item:nth-child(4) {
+    background-image: url(img/pic04.jpg);
+}
+
+.item:nth-child(5) {
+    background-image: url(img/pic05.jpg);
+}
+
+.item:nth-child(6) {
+    background-image: url(img/pic06.jpg);
+    grid-column: span 2;
+}
+
+.item-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: ease 0.3s;
+}
+
+.item-cover:hover {
+    background-color: #db732900;
+}
+
+.cover1 {
+    background-color: #8c7da5b3;
+}
+
+.cover2 {
+    background-color: #a5cabbb3;
+}
+
+.cover3 {
+    background-color: #d8a494b3;
+}
+
+.cover4 {
+    background-color: #e0fff3b3;
+}
+
+.cover5 {
+    background-color: #fffbbeb3;
+}
+
+.cover6 {
+    background-color: #ade1ffb3;
+}
+
+.about {
+    position: relative;
+    background-color: rgb(50, 50, 88);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+    text-align: center;
+}
+
+.feedback {
+    background-color: rgb(50, 50, 88);
+    color: white;
+    padding: 100px 0;
+}
+
+.feedback form {
+    display: grid;
+    grid-template-areas:
+        "name_l email_l"
+        "name_i email_i"
+        "message_l."
+        "message_i message_i"
+        "btn.";
+    grid-template-rows: minmax(auto, auto) 50px minmax(auto, auto) 150px 50px;
+    grid-gap: 15px;
+}
+
+
+.feedback button {
+    grid-area: btn;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: rgb(50, 50, 88);
+    font-size: 20px;
+}
+
+.info {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.info p {
+    text-align: left;
+}
